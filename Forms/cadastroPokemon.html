@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon - pokedex!</title>
+  </head>
+
+  <style>
+    body {
+      background-image: url('assets/pokedex.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+  </style>
+
+  <body border: solid>
+    <section id="informacoes-pessoais-secao">
+      <header>
+        <h2>Informações Pessoais</h2>
+      </header>
+
+      <div class="input-group">
+        <label id="rotulo-name" for="field-name">Name: </label>
+        <input id="field-name" name="nome" type="text">
+        <label id="rotulo-number" for="field-pokemon-number">Pokemon number: </label>
+        <input id="field-pokemon-number" name="numero" type="number" min="0" max="898">
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-type" for="field-type">Type: </label>
+        <input id="field-type" name="type" type="text">
+        <label id="rotulo-total" for="field-total">Total: </label>
+        <input id="field-total" name="total" type="text">
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-hp" for="field-hp">HP: </label>
+        <input id="field-hp" name="hp" type="number" min="0" max="255">
+        <label id="rotulo-attack" for="field-basic-attack">Basic Attack: </label>
+        <input id="field-attack" name="ataque" type="number">
+        <label id="rotulo-defense" for="field-defense">Defense: </label>
+        <input id="field-defense" name="defense" type="number">
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-attackSp" for="field-especial-attack">Especial Attack: </label>
+        <input id="field-attackSp" name="attackSp" type="number">
+        <label id="rotulo-especial-defense" for="field-especial-defense">Especial defense: </label>
+        <input id="field-especial-defense" name="especial-defense" type="number">
+        <label id="rotulo-speed" for="field-speed">Speed: </label>
+        <input id="field-speed" name="speed" type="number">
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-generation" for="field-generation">Generation: </label> <br>
+        <input name="generation" type="radio" value="1">1
+        <input name="generation" type="radio" value="2">2
+        <input name="generation" type="radio" value="3">3
+        <input name="generation" type="radio" value="4">4
+        <input name="generation" type="radio" value="5">5
+        <input name="generation" type="radio" value="6">6
+        <input name="generation" type="radio" value="7">7
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-legendary" for="field-legendary">Legendary: </label><br>
+        <input name="legendary" type="radio" value="sim">Sim
+        <input name="legendary" type="radio" value="nao">Não
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-color" for="field-color">Color: </label>
+        <input id="field-color" name="color" type="text">
+        <label id="rotulo-height" for="field-height">Height: </label>
+        <input id="field-height" name="height" type="number">
+      </div>
+
+      <div class="input-group">
+        <label id="rotulo-weight" for="field-weight">Weight: </label>
+        <input id="field-weight" name="weight" type="number">
+        <label id="rotulo-capture-rate" for="field-capture-rate">Capture rate: </label>
+        <input id="field-capture-rate" name="capture-rate" type="number" min="0" max="255">
+      </div>
+    </section>
+  </body>
+</html>
